@@ -5,7 +5,7 @@ class Home extends Component {
     return (
       <div>
         Home updated!
-        <button onClick={() => console.log('ssup?')}>Hit me</button>
+        <button className="text-white p-2 rounded bg-blue-600 ml-4" onClick={() => console.log('ssup?')}>Hit me</button>
       </div>
     )
   }
