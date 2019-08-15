@@ -1,5 +1,6 @@
 const path = require('path');
 const merge = require('webpack-merge');
+const { ReactLoadablePlugin } = require('react-loadable/webpack');
 
 const baseConfig = require('./webpack.base.js');
 
@@ -9,9 +10,26 @@ const config = {
 
   // Location of the generated file.
   output: {
-    filename: 'bundle.js',
-    path: path.resolve(__dirname, 'public')
-  }
+    filename: '[name].js',
+    path: path.resolve(__dirname, 'public'),
+    chunkFilename: '[name].js',
+  },
+  plugins: [
+    new ReactLoadablePlugin({
+      filename: './public/react-loadable.json',
+    }),
+  ],
+  // optimization: {
+  //   splitChunks: {
+  //     cacheGroups: {
+  //       commons: {
+  //         test: /[\\/]node_modules[\\/]/,
+  //         name: "vendor",
+  //         chunks: "all"
+  //       }
+  //     }
+  //   }
+  // }
 };
 
 module.exports = merge(baseConfig, config);
