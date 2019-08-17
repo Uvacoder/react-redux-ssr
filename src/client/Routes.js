@@ -9,6 +9,8 @@ const LoadableHomePage = Loadable({
   loading,
 });
 
+// console.log('hp', ...LoadableHomePage);
+
 const UsersListPage = Loadable({
   loader: () => import('./pages/UsersListPage'),
   loading,
@@ -26,7 +28,7 @@ export default [
     exact: true,
   },
   {
-    ...UsersListPage,
+    component: UsersListPage,
     path: '/users',
   }
 ];

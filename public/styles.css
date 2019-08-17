@@ -435,6 +435,10 @@ canvas {
   padding: 0.5rem;
 }
 
+.static {
+  position: static;
+}
+
 .text-white {
   color: #fff;
 }

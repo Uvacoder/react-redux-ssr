@@ -4,6 +4,10 @@ import { connect } from 'react-redux';
 import { fetchUsers } from '../actions';
 
 class UsersList extends Component {
+  static loadData(store) {
+    return store.dispatch(fetchUsers());
+  }
+
   componentDidMount() {
     if(!this.props.users) this.props.fetchUsers();
   }
@@ -30,11 +34,13 @@ function mapStateToProps(state) {
   return { users: state.users }
 }
 
-function loadData(store) {
-  return store.dispatch(fetchUsers());
-}
+// function loadData(store) {
+//   return store.dispatch(fetchUsers());
+// }
 
-export default {
-  loadData,
-  component: connect(mapStateToProps, { fetchUsers })(UsersList)
-};
+export default connect(mapStateToProps, { fetchUsers })(UsersList);
+
+// export default {
+//   loadData,
+//   component: connect(mapStateToProps, { fetchUsers })(UsersList)
+// };

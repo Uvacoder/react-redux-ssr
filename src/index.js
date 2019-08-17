@@ -15,10 +15,10 @@ app.get("*", async (req, res) => {
 
   const components = matchRoutes(Routes, req.path).map(({ route }) => {
     console.log('route', route);
-    if(!route.preload) {
+    if(!route.component.preload) {
       return route;
     } else {
-      return route.preload().then(res => {
+      return route.component.preload().then(res => {
         console.log('res', res);
         return res.default;
       })
@@ -26,17 +26,17 @@ app.get("*", async (req, res) => {
   });
 
   const loadedComponents = await Promise.all(components);
-  console.log('loadedComponents', loadedComponents)
+  // console.log('loadedComponents', loadedComponents)
 
   const actions = loadedComponents.map(component => {
-    console.log('component', component);
+    // console.log('component', component);
     return component.loadData ? component.loadData({ ...store, path: req.path }) : null;
   })
-  console.log('actions', actions);
+  // console.log('actions', actions);
 
 
   const loadedActions = await Promise.all(actions);
-  console.log('loadedActions', loadedActions);
+  // console.log('loadedActions', loadedActions);
 
   res.send(renderer(req, store));
 

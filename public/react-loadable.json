@@ -7,20 +7,6 @@
       "publicPath": "0.js"
     }
   ],
-  "undefined": [
-    {
-      "id": "",
-      "name": null,
-      "file": "styles.css",
-      "publicPath": "styles.css"
-    },
-    {
-      "id": "",
-      "name": null,
-      "file": "main.js",
-      "publicPath": "main.js"
-    }
-  ],
   "./assertThisInitialized": [
     {
       "id": "./node_modules/@babel/runtime/helpers/assertThisInitialized.js",
@@ -595,6 +581,62 @@
       "publicPath": "main.js"
     }
   ],
+  "fbjs/lib/warning": [
+    {
+      "id": "./node_modules/fbjs/lib/warning.js",
+      "name": "./node_modules/fbjs/lib/warning.js",
+      "file": "styles.css",
+      "publicPath": "styles.css"
+    },
+    {
+      "id": "./node_modules/fbjs/lib/warning.js",
+      "name": "./node_modules/fbjs/lib/warning.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "./src/client/client.js": [
+    {
+      "id": "./src/client/client.js",
+      "name": "./src/client/client.js",
+      "file": "styles.css",
+      "publicPath": "styles.css"
+    },
+    {
+      "id": "./src/client/client.js",
+      "name": "./src/client/client.js",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "./styles.css": [
+    {
+      "id": "./src/client/styles.css",
+      "name": "./src/client/styles.css",
+      "file": "styles.css",
+      "publicPath": "styles.css"
+    },
+    {
+      "id": "./src/client/styles.css",
+      "name": "./src/client/styles.css",
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
+  "undefined": [
+    {
+      "id": 0,
+      "name": null,
+      "file": "styles.css",
+      "publicPath": "styles.css"
+    },
+    {
+      "id": 0,
+      "name": null,
+      "file": "main.js",
+      "publicPath": "main.js"
+    }
+  ],
   "fbjs/lib/EventListener": [
     {
       "id": "./node_modules/fbjs/lib/EventListener.js",
@@ -829,20 +871,6 @@
     {
       "id": "./node_modules/fbjs/lib/shallowEqual.js",
       "name": "./node_modules/fbjs/lib/shallowEqual.js",
-      "file": "main.js",
-      "publicPath": "main.js"
-    }
-  ],
-  "fbjs/lib/warning": [
-    {
-      "id": "./node_modules/fbjs/lib/warning.js",
-      "name": "./node_modules/fbjs/lib/warning.js",
-      "file": "styles.css",
-      "publicPath": "styles.css"
-    },
-    {
-      "id": "./node_modules/fbjs/lib/warning.js",
-      "name": "./node_modules/fbjs/lib/warning.js",
       "file": "main.js",
       "publicPath": "main.js"
     }
@@ -1797,20 +1825,6 @@
       "publicPath": "main.js"
     }
   ],
-  "./src/client/client.js": [
-    {
-      "id": "./src/client/client.js",
-      "name": "./src/client/client.js",
-      "file": "styles.css",
-      "publicPath": "styles.css"
-    },
-    {
-      "id": "./src/client/client.js",
-      "name": "./src/client/client.js",
-      "file": "main.js",
-      "publicPath": "main.js"
-    }
-  ],
   "./pages/HomePage": [
     {
       "id": "./src/client/pages/HomePage.js",
@@ -1849,20 +1863,6 @@
     {
       "id": "./src/client/reducers/usersReducer.js",
       "name": "./src/client/reducers/usersReducer.js",
-      "file": "main.js",
-      "publicPath": "main.js"
-    }
-  ],
-  "./styles.css": [
-    {
-      "id": "./src/client/styles.css",
-      "name": "./src/client/styles.css",
-      "file": "styles.css",
-      "publicPath": "styles.css"
-    },
-    {
-      "id": "./src/client/styles.css",
-      "name": "./src/client/styles.css",
       "file": "main.js",
       "publicPath": "main.js"
     }
